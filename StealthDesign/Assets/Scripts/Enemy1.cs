@@ -18,7 +18,7 @@ public class Enemy1 : MonoBehaviour
 
     //Patrolling
     public Vector3 walkPoint;
-    bool walkPointSet = false;
+    bool walkPointSet;
     public float walkPointRange;
 
     //Attacking
@@ -33,6 +33,7 @@ public class Enemy1 : MonoBehaviour
     {
         player = GameObject.Find("Player").transform;
         agent = GetComponent<NavMeshAgent>();
+        Patrolling();
     }
 
     void Update()
@@ -61,7 +62,6 @@ public class Enemy1 : MonoBehaviour
             Debug.Log("Walking");
             agent.SetDestination(walkPoint);
         }
-
         Vector3 distanceToWalkPoint = transform.position - walkPoint;
 
         //Walkpoint Reached
@@ -100,7 +100,7 @@ public class Enemy1 : MonoBehaviour
             audio[0].Play();
             audioPlaying = true;
         }
-        
+        walkPointSet = false;
     }
 
     void Attack()
