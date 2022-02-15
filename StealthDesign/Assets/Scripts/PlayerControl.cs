@@ -9,6 +9,7 @@ public class PlayerControl : MonoBehaviour
     private Vector3 moveDirection; //The direction the player is moving in
     private Rigidbody myRB; //The player's rigidbody
     public Transform cameraobject;
+    [SerializeField] private bool grounded = true;
 
 
     public float movespeed;
@@ -29,6 +30,16 @@ public class PlayerControl : MonoBehaviour
         Vector3 movementVelocity = moveDirection * movespeed; //Multiply by speed to get velocity
         
         myRB.velocity = movementVelocity; //Apply that to your rigidbody
+
+        if (!grounded)
+        {
+            myRB.AddForce(0, -movespeed * 3, 0);
+        }
         
+    }
+
+    public void Grounded(bool tf)
+    {
+        grounded = tf;
     }
 }
