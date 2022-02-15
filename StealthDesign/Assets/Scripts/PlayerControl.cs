@@ -9,7 +9,7 @@ public class PlayerControl : MonoBehaviour
     private Vector3 moveDirection; //The direction the player is moving in
     private Rigidbody myRB; //The player's rigidbody
     public Transform cameraobject;
-    [SerializeField] private bool grounded = true;
+    [SerializeField] private bool grounded = false;
 
 
     public float movespeed;

@@ -6025,6 +6025,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 567135680414346897, guid: df840ae855cbf0141b1fbc8e4688e671, type: 3}
+      propertyPath: m_Volume
+      value: 0.47
+      objectReference: {fileID: 0}
     - target: {fileID: 567135680414346898, guid: df840ae855cbf0141b1fbc8e4688e671, type: 3}
       propertyPath: player
       value: 
@@ -16665,6 +16669,10 @@ PrefabInstance:
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 13400000, guid: c2ca8e8d9c14a5c4bbfda33ed867d4c1, type: 2}
+    - target: {fileID: 2596382540818628363, guid: 7a343a44f757e3945acb11fc8cd72a4a, type: 3}
+      propertyPath: grounded
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2596382540818628366, guid: 7a343a44f757e3945acb11fc8cd72a4a, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -16675,7 +16683,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2596382540818628366, guid: 7a343a44f757e3945acb11fc8cd72a4a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10.23
+      value: 9.377
       objectReference: {fileID: 0}
     - target: {fileID: 2596382540818628366, guid: 7a343a44f757e3945acb11fc8cd72a4a, type: 3}
       propertyPath: m_LocalPosition.z
