@@ -6025,6 +6025,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 567135680414346898, guid: df840ae855cbf0141b1fbc8e4688e671, type: 3}
+      propertyPath: attackRange
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 567135680414346904, guid: df840ae855cbf0141b1fbc8e4688e671, type: 3}
       propertyPath: m_Name
       value: Enemy1
@@ -15502,7 +15506,7 @@ LightingSettings:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   serializedVersion: 3
-  m_GIWorkflowMode: 1
+  m_GIWorkflowMode: 0
   m_EnableBakedLightmaps: 1
   m_EnableRealtimeLightmaps: 0
   m_RealtimeEnvironmentLighting: 1

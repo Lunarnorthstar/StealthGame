@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 
 public class Enemy1 : MonoBehaviour
 {
@@ -113,7 +114,8 @@ public class Enemy1 : MonoBehaviour
         {
             //Insert Attack code here>
             Debug.Log("Attack");
-
+            Scene scene = SceneManager.GetActiveScene();
+            SceneManager.LoadScene(scene.name);
             //<Insert Attack code here
 
             alreadyAttacked = true;
