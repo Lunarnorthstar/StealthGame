@@ -24,6 +24,7 @@ public class Enemy1 : MonoBehaviour
     //Attacking
     public float timeBetweenAttacks;
     bool alreadyAttacked;
+    public Transform playerRespawnPos;
 
     //States
     public float sightRange, attackRange;
@@ -114,8 +115,9 @@ public class Enemy1 : MonoBehaviour
         {
             //Insert Attack code here>
             Debug.Log("Attack");
-            Scene scene = SceneManager.GetActiveScene();
-            SceneManager.LoadScene(scene.name);
+            //Scene scene = SceneManager.GetActiveScene();
+            //SceneManager.LoadScene(scene.name);
+            player.transform.position = playerRespawnPos.position;
             //<Insert Attack code here
 
             alreadyAttacked = true;
