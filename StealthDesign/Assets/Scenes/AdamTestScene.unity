@@ -123,26 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &232009803 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2596382540818628356, guid: 7a343a44f757e3945acb11fc8cd72a4a, type: 3}
-  m_PrefabInstance: {fileID: 2596382540814111283}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &232009812
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 232009803}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c806fb848e9c3c24b90eb5f813b35dcc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  projectile: {fileID: 2178893690962259255, guid: 660ad4371829f724893f99bdeb34e5ae, type: 3}
-  shotpoint: {fileID: 1897810490}
-  shootpower: 10
 --- !u!1 &1193835870
 GameObject:
   m_ObjectHideFlags: 0
@@ -238,11 +218,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1897810490 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1819053609577328088, guid: 7a343a44f757e3945acb11fc8cd72a4a, type: 3}
-  m_PrefabInstance: {fileID: 2596382540814111283}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1941105268
 GameObject:
   m_ObjectHideFlags: 0

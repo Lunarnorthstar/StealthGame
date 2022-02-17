@@ -35,6 +35,16 @@ public class PlayerControl : MonoBehaviour
         {
             myRB.AddForce(0, -movespeed * 3, 0);
         }
+
+        if (Input.GetKeyDown(KeyCode.LeftControl))
+        {
+            gameObject.transform.localScale /= 2;
+        }
+
+        if (Input.GetKeyUp(KeyCode.LeftControl))
+        {
+            gameObject.transform.localScale *= 2;
+        }
         
     }
 
