@@ -6,11 +6,12 @@ TagManager:
   tags:
   - Object
   - Ammo
+  - Ground
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - GroundChecker
   - Water
   - UI
   - WhatIsGround

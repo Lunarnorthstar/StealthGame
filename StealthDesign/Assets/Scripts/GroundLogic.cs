@@ -17,13 +17,19 @@ public class GroundLogic : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
-        gameObject.GetComponentInParent<PlayerControl>().SendMessage("Grounded", true);
+        if (other.gameObject.layer == 6) //6 Is the "WhatIsGround" layer
+        {
+            gameObject.GetComponentInParent<PlayerControl>().SendMessage("Grounded", true);
+        }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        gameObject.GetComponentInParent<PlayerControl>().SendMessage("Grounded", false);
+        if (other.gameObject.layer == 6) //6 Is the "WhatIsGround" layer
+        {
+            gameObject.GetComponentInParent<PlayerControl>().SendMessage("Grounded", false);
+        }
     }
 }

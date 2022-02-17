@@ -10,7 +10,7 @@ public class PlayerControl : MonoBehaviour
     private Rigidbody myRB; //The player's rigidbody
     public Transform cameraobject;
     [SerializeField] private bool grounded = false;
-
+    public float extraGravity = 6;
 
     public float movespeed;
     // Start is called before the first frame update
@@ -33,7 +33,7 @@ public class PlayerControl : MonoBehaviour
 
         if (!grounded)
         {
-            myRB.AddForce(0, -movespeed * 3, 0);
+            myRB.AddForce(0, -movespeed * extraGravity, 0);
         }
 
         if (Input.GetKeyDown(KeyCode.LeftControl))
