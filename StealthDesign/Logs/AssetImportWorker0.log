@@ -1,126 +1,175 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.18f1 (a7d1c678663c) revision 10998214'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Home; OS build 19043.1526; Version 2009; 64bit' Language: 'en' Physical Memory: 16333 MB
+OS: 'Windows 10 Home; OS build 19044.1526; Version 2009; 64bit' Language: 'en' Physical Memory: 16303 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
 COMMAND LINE ARGUMENTS:
-D:\2020.3.18f1\Editor\Unity.exe
+C:\Program Files\Unity\Hub\Editor\2020.3.18f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-D:/Repo/StealthGame/StealthDesign
+C:/Users/adamk/OneDrive/Documents/GitHub/StealthGame/StealthDesign
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-60840
-Successfully changed project path to: D:/Repo/StealthGame/StealthDesign
-D:/Repo/StealthGame/StealthDesign
+53918
+Successfully changed project path to: C:/Users/adamk/OneDrive/Documents/GitHub/StealthGame/StealthDesign
+C:/Users/adamk/OneDrive/Documents/GitHub/StealthGame/StealthDesign
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 68.88 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 37.43 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.18f1 (a7d1c678663c)
-[Subsystems] Discovering subsystems at path D:/2020.3.18f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path D:/Repo/StealthGame/StealthDesign/Assets
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/adamk/OneDrive/Documents/GitHub/StealthGame/StealthDesign/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 970M (ID=0x1618)
+    Renderer: NVIDIA GeForce RTX 2080 with Max-Q Design (ID=0x1ed0)
     Vendor:   
-    VRAM:     3029 MB
-    Driver:   26.21.14.3086
+    VRAM:     8010 MB
+    Driver:   26.21.14.3165
 Initialize mono
-Mono path[0] = 'D:/2020.3.18f1/Editor/Data/Managed'
-Mono path[1] = 'D:/2020.3.18f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'D:/2020.3.18f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56636
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56980
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: D:/2020.3.18f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Register platform support module: D:/2020.3.18f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003613 seconds.
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002361 seconds.
 Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 68.85 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 44.03 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  3.090 seconds
+- Completed reload, in  2.051 seconds
 Domain Reload Profiling:
-	ReloadAssembly (3090ms)
-		BeginReloadAssembly (110ms)
+	ReloadAssembly (2051ms)
+		BeginReloadAssembly (55ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (799ms)
-			LoadAssemblies (109ms)
+		EndReloadAssembly (506ms)
+			LoadAssemblies (52ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (302ms)
+			SetupTypeCache (186ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (58ms)
-			SetupLoadedEditorAssemblies (312ms)
+			RebuildScriptCaches (38ms)
+			SetupLoadedEditorAssemblies (200ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (8ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (69ms)
-				BeforeProcessingInitializeOnLoad (29ms)
-				ProcessInitializeOnLoadAttributes (152ms)
-				ProcessInitializeOnLoadMethodAttributes (54ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (44ms)
+				BeforeProcessingInitializeOnLoad (14ms)
+				ProcessInitializeOnLoadAttributes (102ms)
+				ProcessInitializeOnLoadMethodAttributes (34ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.005713 seconds.
+Registered in 0.004213 seconds.
 Begin MonoManager ReloadAssembly
+Symbol file data-000002580DD77020 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\Unity.ProBuilder.KdTree.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002580846A010 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\Cinemachine.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002580D7D4080 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002580D8D64D0 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002580D7D4080 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\Unity.ProBuilder.AssetIdRemapUtility.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025807DB1EB0 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\Unity.ProBuilder.Stl.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002580846A010 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002580847F620 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025807D32E20 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\Unity.ProBuilder.AddOns.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002580DBAA640 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\Unity.Settings.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002580CDDA230 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002580CFA3020 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002580CE41010 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002580CD50E20 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002580CDDA230 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002580D738040 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\Unity.ProBuilder.Csg.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002580DB9E230 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\NavMeshComponentsEditor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002580CFD1230 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025807B7A740 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\NavMeshComponents.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002580DBFA010 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\Unity.ProBuilder.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002580DBFA010 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\Unity.ProBuilder.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002580847F620 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002580DBFA010 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002580CD8BA40 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002580CE41010 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002580CD8BA40 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\Unity.ProBuilder.Poly2Tri.dll
+Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.36 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.004 seconds
+- Completed reload, in  1.185 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2005ms)
-		BeginReloadAssembly (283ms)
+	ReloadAssembly (1186ms)
+		BeginReloadAssembly (179ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (8ms)
+			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (32ms)
-		EndReloadAssembly (1610ms)
-			LoadAssemblies (180ms)
+			CreateAndSetChildDomain (23ms)
+		EndReloadAssembly (933ms)
+			LoadAssemblies (110ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (555ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (91ms)
-			SetupLoadedEditorAssemblies (619ms)
+			SetupTypeCache (328ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (52ms)
+			SetupLoadedEditorAssemblies (354ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (11ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (160ms)
-				ProcessInitializeOnLoadAttributes (432ms)
-				ProcessInitializeOnLoadMethodAttributes (8ms)
-				AfterProcessingInitializeOnLoad (6ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (101ms)
+				ProcessInitializeOnLoadAttributes (236ms)
+				ProcessInitializeOnLoadMethodAttributes (4ms)
+				AfterProcessingInitializeOnLoad (7ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (12ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.12 seconds
-Refreshing native plugins compatible for Editor in 0.60 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1920 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 86.7 MB.
 System memory in use after: 86.8 MB.
 
 Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 2357.
-Total: 5.394900 ms (FindLiveObjects: 0.311500 ms CreateObjectMapping: 0.130100 ms MarkObjects: 4.789500 ms  DeleteObjects: 0.162100 ms)
+Total: 3.550600 ms (FindLiveObjects: 0.174700 ms CreateObjectMapping: 0.071000 ms MarkObjects: 3.193500 ms  DeleteObjects: 0.110200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -129,70 +178,130 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Scenes
-  artifactKey: Guid(aedfb2367beb3fd48ab6d1908dcdfd94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes using Guid(aedfb2367beb3fd48ab6d1908dcdfd94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03d7dfb97c7fa22ce91d0315a352db68') in 0.014042 seconds 
-  Import took 0.019423 seconds .
+  path: Assets/Scenes/AdamTestScene.unity
+  artifactKey: Guid(7e8366f1ef265124195f1f310fb6097f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/AdamTestScene.unity using Guid(7e8366f1ef265124195f1f310fb6097f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17ad25be53bbcc3b8061270ff63f3b0b') in 0.021827 seconds 
+  Import took 0.024559 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000357 seconds.
-  path: Assets/Scenes/SampleScene.unity
-  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43c886fd95a4c5e88ccd0adc682427cc') in 0.072086 seconds 
-  Import took 0.076884 seconds .
+  Time since last request: 10.239979 seconds.
+  path: Assets/Scripts/Playerthrow.cs
+  artifactKey: Guid(c806fb848e9c3c24b90eb5f813b35dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Playerthrow.cs using Guid(c806fb848e9c3c24b90eb5f813b35dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e820652808ae715125916cd582770508') in 0.043944 seconds 
+  Import took 0.046608 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 34.736593 seconds.
+  path: Assets/Scripts/Playerthrow.cs
+  artifactKey: Guid(c806fb848e9c3c24b90eb5f813b35dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Playerthrow.cs using Guid(c806fb848e9c3c24b90eb5f813b35dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b8fc58e628a216dd2872942bf6bb477') in 0.005570 seconds 
+  Import took 0.010331 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.005377 seconds.
+Registered in 0.003930 seconds.
 Begin MonoManager ReloadAssembly
+Symbol file data-00000258084E0310 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\Unity.ProBuilder.KdTree.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002580DB86010 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\Cinemachine.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000258084E0310 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025808361010 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000258084E0310 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\Unity.ProBuilder.AssetIdRemapUtility.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000257DF499A30 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\Unity.ProBuilder.Stl.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025808361010 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025807DA2020 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025807D32E20 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\Unity.ProBuilder.AddOns.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002580C321230 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\Unity.Settings.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025808361010 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025807AE0CD0 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025808361010 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002581136D030 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025808361010 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025807A33E90 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\Unity.ProBuilder.Csg.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000258084E0310 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\NavMeshComponentsEditor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002580CFD1230 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025808484820 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\NavMeshComponents.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002580D87C020 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\Unity.ProBuilder.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000258107A8C90 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\Unity.ProBuilder.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025807DA2020 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000258107A8C90 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025807DAA020 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002580FFF0010 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000258079E4E40 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\Unity.ProBuilder.Poly2Tri.dll
+Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.62 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.38 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.835 seconds
+- Completed reload, in  1.091 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1836ms)
-		BeginReloadAssembly (207ms)
+	ReloadAssembly (1092ms)
+		BeginReloadAssembly (127ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (9ms)
+			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (59ms)
-		EndReloadAssembly (1518ms)
-			LoadAssemblies (173ms)
+			CreateAndSetChildDomain (35ms)
+		EndReloadAssembly (895ms)
+			LoadAssemblies (95ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (536ms)
+			SetupTypeCache (311ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (81ms)
-			SetupLoadedEditorAssemblies (564ms)
+			RebuildScriptCaches (49ms)
+			SetupLoadedEditorAssemblies (331ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (11ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (140ms)
-				ProcessInitializeOnLoadAttributes (397ms)
-				ProcessInitializeOnLoadMethodAttributes (7ms)
-				AfterProcessingInitializeOnLoad (6ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (94ms)
+				ProcessInitializeOnLoadAttributes (218ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (7ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (12ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.62 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1890 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 84.2 MB.
 System memory in use after: 84.3 MB.
 
 Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2359.
-Total: 5.233800 ms (FindLiveObjects: 0.327000 ms CreateObjectMapping: 0.123200 ms MarkObjects: 4.666000 ms  DeleteObjects: 0.116000 ms)
+Total: 3.265600 ms (FindLiveObjects: 0.346200 ms CreateObjectMapping: 0.145400 ms MarkObjects: 2.701600 ms  DeleteObjects: 0.071300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -201,6 +310,116 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003610 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0000025810463020 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\Unity.ProBuilder.KdTree.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002580DB86010 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\Cinemachine.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025832415830 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002580E291020 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025832415830 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\Unity.ProBuilder.AssetIdRemapUtility.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002580C738820 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\Unity.ProBuilder.Stl.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002580E291020 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002580F7C8010 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025807D64AA0 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\Unity.ProBuilder.AddOns.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002580E2E0430 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\Unity.Settings.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002580DC2E020 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002580C2E2010 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000258079DBA30 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025807D68AC0 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002580DC2E020 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002580DB9B620 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\Unity.ProBuilder.Csg.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025832415830 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\NavMeshComponentsEditor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002580D07F030 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002580DB9B620 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\NavMeshComponents.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002580DBFA010 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\Unity.ProBuilder.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025807AE0CD0 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\Unity.ProBuilder.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002580F7C8010 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025807AE0CD0 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025810070020 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002580D281010 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025808108730 doesn't match image C:\Users\adamk\OneDrive\Documents\GitHub\StealthGame\StealthDesign\Library\ScriptAssemblies\Unity.ProBuilder.Poly2Tri.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.074 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1074ms)
+		BeginReloadAssembly (123ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (36ms)
+		EndReloadAssembly (880ms)
+			LoadAssemblies (106ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (302ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (329ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (93ms)
+				ProcessInitializeOnLoadAttributes (219ms)
+				ProcessInitializeOnLoadMethodAttributes (4ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.45 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1890 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 84.3 MB.
+System memory in use after: 84.3 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2361.
+Total: 3.613000 ms (FindLiveObjects: 0.232900 ms CreateObjectMapping: 0.093200 ms MarkObjects: 3.205800 ms  DeleteObjects: 0.080000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
