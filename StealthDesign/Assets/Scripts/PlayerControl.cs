@@ -45,11 +45,12 @@ public class PlayerControl : MonoBehaviour
         {
             gameObject.transform.localScale *= 2;
         }
-        
     }
 
     public void Grounded(bool tf)
     {
         grounded = tf;
     }
+
+    
 }

@@ -118,6 +118,7 @@ public class Enemy1 : MonoBehaviour
             //Scene scene = SceneManager.GetActiveScene();
             //SceneManager.LoadScene(scene.name);
             player.transform.position = playerRespawnPos.position;
+            player.SendMessage("LoseObject");
             //<Insert Attack code here
 
             alreadyAttacked = true;
