@@ -6,7 +6,7 @@ using UnityEngine;
 //This script goes on the player "Player". Objects to be picked up must be tagged as "Object" and posess a collider.
 public class PlayerPickup : MonoBehaviour
 {
-    public int objects = 0;
+    public static int objects = 0;
     // Start is called before the first frame update
     void Start()
     {
