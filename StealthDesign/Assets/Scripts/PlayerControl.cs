@@ -8,6 +8,7 @@ public class PlayerControl : MonoBehaviour
 {
     //Variables needed for enemy AI
     public static Vector3 playerPos;
+    public static bool crouched = false;
 
     private Vector3 moveDirection; //The direction the player is moving in
     private Rigidbody myRB; //The player's rigidbody
@@ -54,11 +55,13 @@ public class PlayerControl : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftControl))
         {
             gameObject.transform.localScale /= 2;
+            crouched = true;
         }
 
         if (Input.GetKeyUp(KeyCode.LeftControl))
         {
             gameObject.transform.localScale *= 2;
+            crouched = false;
         }
     }
 

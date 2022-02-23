@@ -132,7 +132,7 @@ public class Enemy_Sound_AI : MonoBehaviour
 
         if (distance <= noiseTravelDistance)
         {
-            if (Input.GetButton("Horizontal") || Input.GetButton("Vertical"))
+            if (PlayerControl.crouched == false && Input.GetButton("Horizontal") || PlayerControl.crouched == false && Input.GetButton("Vertical"))
             {
                 noisePosition = PlayerControl.playerPos;
                 noiseVolume += 1f;
