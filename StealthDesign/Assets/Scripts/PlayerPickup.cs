@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class PlayerPickup : MonoBehaviour
 {
    
-    public int objects = 0;
+    public static int objects = 0;
 
     public Text uiText; //The UI element that displays the player's object count.
 

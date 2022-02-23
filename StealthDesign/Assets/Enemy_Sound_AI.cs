@@ -294,5 +294,6 @@ public class Enemy_Sound_AI : MonoBehaviour
     {
         Debug.Log("Attack");
         player.transform.position = playerSpawn.transform.position;
+        player.SendMessage("LoseObject");
     }
 }
