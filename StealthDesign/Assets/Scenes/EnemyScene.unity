@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 674314660}
   - component: {fileID: 674314659}
   - component: {fileID: 674314658}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -211,7 +211,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 674314657}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 32.2, y: 1.5, z: -5.41}
   m_LocalScale: {x: 2, y: 3, z: 4}
   m_Children: []
@@ -296,7 +296,7 @@ GameObject:
   - component: {fileID: 1174411666}
   - component: {fileID: 1174411665}
   - component: {fileID: 1174411664}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -372,7 +372,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1174411663}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 19.52, y: 1.5, z: -9.57}
   m_LocalScale: {x: 1, y: 3, z: 1}
   m_Children: []
@@ -391,7 +391,7 @@ GameObject:
   - component: {fileID: 1494058526}
   - component: {fileID: 1494058525}
   - component: {fileID: 1494058524}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -467,7 +467,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1494058523}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 23.43, y: 2.5, z: 1.62}
   m_LocalScale: {x: 5, y: 5, z: 4}
   m_Children: []
@@ -732,9 +732,25 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 7854032309324773060, guid: 44f812db00d4d83479a2bd9c143366fc, type: 3}
+      propertyPath: m_DefaultArea
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7854032309324773060, guid: 44f812db00d4d83479a2bd9c143366fc, type: 3}
       propertyPath: m_NavMeshData
       value: 
       objectReference: {fileID: 23800000, guid: 70ddb0bc97b97b049a0336321456718c, type: 2}
+    - target: {fileID: 7854032309324773060, guid: 44f812db00d4d83479a2bd9c143366fc, type: 3}
+      propertyPath: m_UseGeometry
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7854032309324773060, guid: 44f812db00d4d83479a2bd9c143366fc, type: 3}
+      propertyPath: m_CollectObjects
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7854032309324773060, guid: 44f812db00d4d83479a2bd9c143366fc, type: 3}
+      propertyPath: m_OverrideVoxelSize
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7854032309324773061, guid: 44f812db00d4d83479a2bd9c143366fc, type: 3}
       propertyPath: m_RootOrder
       value: 4

@@ -6,6 +6,9 @@ using UnityEngine.EventSystems;
 
 public class PlayerControl : MonoBehaviour
 {
+    //Variables needed for enemy AI
+    public static Vector3 playerPos;
+
     private Vector3 moveDirection; //The direction the player is moving in
     private Rigidbody myRB; //The player's rigidbody
     public Transform cameraobject;
@@ -17,6 +20,18 @@ public class PlayerControl : MonoBehaviour
     void Start()
     {
         myRB = GetComponent<Rigidbody>();
+
+        //Getting player position
+        StartCoroutine(TrackPlayer());
+    }
+    //Tracking player position
+    IEnumerator TrackPlayer()
+    {
+        while (true)
+        {
+            playerPos = gameObject.transform.position;
+            yield return null;
+        }
     }
 
     // Update is called once per frame
