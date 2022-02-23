@@ -131,8 +131,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec62a61f2f850524eae53e3a2c46e77d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  crouchSpeedMult: 0.3
   cameraobject: {fileID: 2596382541538625070}
   grounded: 1
+  extraGravity: 6
   movespeed: 15
 --- !u!136 &2596382540818628365
 CapsuleCollider:
@@ -160,7 +162,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5755d77195bcac44aa65d3639ceaf4b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objects: 0
+  uiText: {fileID: 0}
+  objectsToActivate:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &5063560005615268126
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -176,6 +185,8 @@ MonoBehaviour:
   projectile: {fileID: 2178893690962259255, guid: 660ad4371829f724893f99bdeb34e5ae, type: 3}
   shotpoint: {fileID: 1819053609577328088}
   shootpower: 10
+  ammo: 0
+  ammoUI: {fileID: 0}
 --- !u!1 &2596382541538625065
 GameObject:
   m_ObjectHideFlags: 0

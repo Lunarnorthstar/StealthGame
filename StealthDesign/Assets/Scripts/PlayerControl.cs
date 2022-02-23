@@ -9,7 +9,8 @@ public class PlayerControl : MonoBehaviour
     //Variables needed for enemy AI
     public static Vector3 playerPos;
     public static bool crouched = false;
-
+    public float crouchSpeedMult = 0.5f;
+    
     private Vector3 moveDirection; //The direction the player is moving in
     private Rigidbody myRB; //The player's rigidbody
     public Transform cameraobject;
@@ -44,7 +45,11 @@ public class PlayerControl : MonoBehaviour
         moveDirection.y = 0; //Make sure you aren't going up any
         
         Vector3 movementVelocity = moveDirection * movespeed; //Multiply by speed to get velocity
-        
+        if(crouched)
+        {
+            movementVelocity *= crouchSpeedMult;
+        }
+
         myRB.velocity = movementVelocity; //Apply that to your rigidbody
 
         if (!grounded)
