@@ -21659,11 +21659,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2596382540818628363, guid: 7a343a44f757e3945acb11fc8cd72a4a, type: 3}
       propertyPath: movespeed
-      value: 14
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2596382540818628363, guid: 7a343a44f757e3945acb11fc8cd72a4a, type: 3}
       propertyPath: extraGravity
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 2596382540818628363, guid: 7a343a44f757e3945acb11fc8cd72a4a, type: 3}
+      propertyPath: crouchSpeedMult
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2596382540818628364, guid: 7a343a44f757e3945acb11fc8cd72a4a, type: 3}
       propertyPath: uiText
@@ -21693,6 +21697,10 @@ PrefabInstance:
       propertyPath: objectsToActivate.Array.data[5]
       value: 
       objectReference: {fileID: 1719377312}
+    - target: {fileID: 2596382540818628365, guid: 7a343a44f757e3945acb11fc8cd72a4a, type: 3}
+      propertyPath: m_Radius
+      value: 0.8
+      objectReference: {fileID: 0}
     - target: {fileID: 2596382540818628366, guid: 7a343a44f757e3945acb11fc8cd72a4a, type: 3}
       propertyPath: m_RootOrder
       value: 19
