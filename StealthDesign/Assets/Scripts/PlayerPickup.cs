@@ -9,6 +9,7 @@ public class PlayerPickup : MonoBehaviour
 {
    
     public static int objects = 0;
+    public int objectsButNotStatic;
 
     public Text uiText; //The UI element that displays the player's object count.
 
@@ -26,7 +27,7 @@ public class PlayerPickup : MonoBehaviour
     void Update()
     {
         uiText.text = "Objects:" + objects; //Display on UI
-        
+        objectsButNotStatic = objects;
     }
 
     private void OnTriggerEnter(Collider other) //When the player bumps into something...
