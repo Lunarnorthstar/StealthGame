@@ -22,10 +22,15 @@ public class PlayerControl : MonoBehaviour
     public float extraGravity = 6;
 
     public float movespeed;
+
+    private AudioSource audio;
+
+    private bool audioPlay = false;
     // Start is called before the first frame update
     void Start()
     {
         myRB = GetComponent<Rigidbody>();
+        audio = GetComponent<AudioSource>();
         stamina = maxStamina;
 
         //Getting player position
@@ -58,34 +63,45 @@ public class PlayerControl : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftShift) && !crouched && stamina > 0)//If you're sprinting and not crouching and have stamina...
         {
             movementVelocity *= runSpeedMult; //Multiply your speed by the relevant multiplier.
+            if (!audioPlay) //If the audio isn't playing...
+            {
+                audio.Play(); //Play the audio
+                audioPlay = true; //Tell the script the audio is playing.
+            }
+            
             stamina -= Time.deltaTime; //Reduce your stamina.
+        }
+        else //If you aren't sprinting...
+        {
+            audio.Stop(); //Stop playing the audio
+            audioPlay = false; //Tell the script the audio isn't playing.
         }
 
         myRB.velocity = movementVelocity; //Apply that to your rigidbody
 
-        if (!grounded)
+        if (!grounded) //If you're not grounded
         {
-            myRB.AddForce(0, -movespeed * extraGravity, 0);
+            myRB.AddForce(0, -movespeed * extraGravity, 0); //Apply force downwards. This is to keep the model grounded while also not having to mess with the gravity projectsetting.
         }
 
-        if (Input.GetKeyDown(KeyCode.C))
+        if (Input.GetKeyDown(KeyCode.C)) //When you press C...
         {
-            gameObject.transform.localScale /= 2;
-            crouched = true;
+            gameObject.transform.localScale /= 2; //Halve your scale.
+            crouched = true; //Set crouch bool to true.
         }
-        if (Input.GetKeyUp(KeyCode.C))
+        if (Input.GetKeyUp(KeyCode.C)) //When you release C...
         {
-            gameObject.transform.localScale *= 2;
-            crouched = false;
+            gameObject.transform.localScale *= 2; //Double your scale.
+            crouched = false; //Set crouch bool to false.
         }
 
-        if (!Input.GetKey(KeyCode.LeftShift) && stamina < maxStamina)
+        if (!Input.GetKey(KeyCode.LeftShift) && stamina < maxStamina) //If you're not trying to sprint and your stamina is below maximum...
         {
-            stamina += Time.deltaTime;
+            stamina += Time.deltaTime; //Gain stamina based on time passed.
         }
     }
 
-    public void Grounded(bool tf)
+    public void Grounded(bool tf) //This variable is passed in via a different script.
     {
         grounded = tf;
     }
