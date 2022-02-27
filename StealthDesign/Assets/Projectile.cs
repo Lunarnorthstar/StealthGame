@@ -10,6 +10,8 @@ public class Projectile : MonoBehaviour
     public AudioSource aS;
     private bool playonce = true;
 
+    public float breakPersist = 0.5f;
+
     private void Start()
     {
         aS = GetComponent<AudioSource>();
@@ -25,13 +27,19 @@ public class Projectile : MonoBehaviour
                 aS.Play();
                 playonce = false;
             }
-            
-            //destroy(gameObject);
+
+            if (breakPersist <= 0)
+            {
+                //destroy(gameObject);
+            }
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (makeNoise)
+        {
+            breakPersist -= Time.deltaTime;
+        }
     }
 }
