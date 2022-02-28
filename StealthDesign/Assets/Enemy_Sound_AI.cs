@@ -20,6 +20,10 @@ public class Enemy_Sound_AI : MonoBehaviour
     public float memoryStartTime = 10f;
     private float increasingMemoryTime;
 
+    //Stun Values
+    public float stunDuration = 5f;
+    private float timeStunned;
+
     //AI hearing
     Vector3 noisePosition;
     private bool aiHeardPlayer = false;
@@ -34,6 +38,8 @@ public class Enemy_Sound_AI : MonoBehaviour
     //Patrolling
     public Transform[] moveSpots;
     private int randomSpot;
+
+    public LayerMask SafeZone, EnemyBlock;
 
     //Wait time at waypoint when patrolling
     private float waitTime;
@@ -90,6 +96,7 @@ public class Enemy_Sound_AI : MonoBehaviour
         {
             if (playerIsInLOS == false && aiMemorizesPlayer == false && aiHeardPlayer == false)
             {
+                
                 Patrol();
                 NoiseCheck();
                 StopCoroutine(AiMemory());
@@ -114,15 +121,15 @@ public class Enemy_Sound_AI : MonoBehaviour
         }
         if (PlayerPickup.objects >= 2)
         {
-            nav.speed = 7.5f;
+            nav.speed = 8f;
         }
         else if (PlayerPickup.objects >= 3)
         {
-            nav.speed = 10f;
+            nav.speed = 12f;
         }
         else
         {
-            nav.speed = 5f;
+            nav.speed = 4f;
         }
     }
 
@@ -132,13 +139,27 @@ public class Enemy_Sound_AI : MonoBehaviour
 
         if (distance <= noiseTravelDistance)
         {
-            if (PlayerControl.crouched == false && Input.GetButton("Horizontal") || PlayerControl.crouched == false && Input.GetButton("Vertical"))
+            if (PlayerControl.silent == false && Input.GetButton("Horizontal") || PlayerControl.silent == false && Input.GetButton("Vertical"))
             {
                 noisePosition = PlayerControl.playerPos;
                 noiseVolume += 1f;
 
+                if (Physics.Raycast(noisePosition, -transform.up, 5f, SafeZone))
+                {
+                    aiHeardPlayer = false;
+                    
+                }
+                else if (Physics.Raycast(noisePosition, -transform.up, 5f, EnemyBlock))
+                {
+                    aiHeardPlayer = false;
+                    
+                }
+                else 
+                {
+                    aiHeardPlayer = true;
+                }
 
-                aiHeardPlayer = true;
+                
             }
             else if (Projectile.makeNoise == true)
             {
@@ -146,8 +167,21 @@ public class Enemy_Sound_AI : MonoBehaviour
                 noiseVolume += 1f;
 
                 
-                aiHeardPlayer = true;
-                
+                if (Physics.Raycast(noisePosition, -transform.up, 5f, SafeZone))
+                {
+                    aiHeardPlayer = false;
+                    canSpin = false;
+                }
+                else if (Physics.Raycast(noisePosition, -transform.up, 5f, EnemyBlock))
+                {
+                    aiHeardPlayer = false;
+                    canSpin = false;
+                }
+                else
+                {
+                    aiHeardPlayer = true;
+                }
+
             }
             else 
             {
@@ -225,6 +259,8 @@ public class Enemy_Sound_AI : MonoBehaviour
 
     void Patrol()
     {
+        Debug.Log("Patrolling");
+
         chasing = false;
         nav.SetDestination(moveSpots[randomSpot].position);
 
@@ -282,18 +318,36 @@ public class Enemy_Sound_AI : MonoBehaviour
         transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * facePlayerFactor);
     }
 
-    /*void OnCollisionEnter(Collision other)
+    void OnCollisionEnter(Collision other)
     { 
-        if(other.gameObject.tag == "Player")
+        if(other.gameObject.tag == "Projectile")
         {
-            Attack();
+            Stun();
         }
-    }*/
+    }
 
     void Attack()
     {
         Debug.Log("Attack");
         player.transform.position = playerSpawn.transform.position;
         player.SendMessage("LoseObject");
+    }
+
+    void Stun()
+    {
+        Debug.Log("Hit");
+        StartCoroutine(StunEffect());
+    }
+    IEnumerator StunEffect()
+    {
+        timeStunned = 0f;
+
+        while (timeStunned <= stunDuration)
+        {
+            timeStunned += Time.deltaTime;
+            nav.speed = 0f;
+            yield return null;
+        }
+
     }
 }

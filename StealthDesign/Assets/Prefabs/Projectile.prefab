@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 3964284522228280388}
   m_Layer: 0
   m_Name: Projectile
-  m_TagString: Untagged
+  m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -126,6 +126,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06a896ebb06423c40aa9e865869e0498, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  aS: {fileID: 0}
+  breakPersist: 0.5
 --- !u!82 &3964284522228280388
 AudioSource:
   m_ObjectHideFlags: 0

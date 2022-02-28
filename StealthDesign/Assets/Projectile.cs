@@ -10,7 +10,7 @@ public class Projectile : MonoBehaviour
     public AudioSource aS;
     private bool playonce = true;
 
-    public float breakPersist = 0.5f;
+    public float breakPersist = 120f;
 
     private void Start()
     {
@@ -30,7 +30,7 @@ public class Projectile : MonoBehaviour
 
             if (breakPersist <= 0)
             {
-                //destroy(gameObject);
+                Destroy(gameObject);
             }
     }
 

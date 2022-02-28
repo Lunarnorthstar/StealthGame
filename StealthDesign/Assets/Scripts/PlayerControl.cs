@@ -9,6 +9,7 @@ public class PlayerControl : MonoBehaviour
     //Variables needed for enemy AI
     public static Vector3 playerPos;
     public static bool crouched = false;
+    public static bool silent = true;
     public float crouchSpeedMult = 0.5f;
 
     public float maxStamina = 5;
@@ -68,13 +69,14 @@ public class PlayerControl : MonoBehaviour
                 audio.Play(); //Play the audio
                 audioPlay = true; //Tell the script the audio is playing.
             }
-            
+            silent = false; //Set silent to false
             stamina -= Time.deltaTime; //Reduce your stamina.
         }
         else //If you aren't sprinting...
         {
             audio.Stop(); //Stop playing the audio
             audioPlay = false; //Tell the script the audio isn't playing.
+            silent = true; //Set silent to true
         }
 
         myRB.velocity = movementVelocity; //Apply that to your rigidbody
@@ -98,6 +100,7 @@ public class PlayerControl : MonoBehaviour
         if (!Input.GetKey(KeyCode.LeftShift) && stamina < maxStamina) //If you're not trying to sprint and your stamina is below maximum...
         {
             stamina += Time.deltaTime; //Gain stamina based on time passed.
+            
         }
     }
 
