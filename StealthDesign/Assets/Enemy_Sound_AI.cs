@@ -32,6 +32,7 @@ public class Enemy_Sound_AI : MonoBehaviour
     private bool canSpin = false;
     private float isSpinningTime;
     public float spinTime = 3f;
+    public float walkNoiseMult = 0.5f;
 
     private float noiseVolume = 0f;
 
@@ -121,11 +122,15 @@ public class Enemy_Sound_AI : MonoBehaviour
         }
         if (PlayerPickup.objects >= 2)
         {
-            nav.speed = 8f;
+            nav.speed = 10f;
         }
         else if (PlayerPickup.objects >= 3)
         {
-            nav.speed = 12f;
+            nav.speed = 16f;
+        }
+        else if (PlayerPickup.objects >= 1)
+        {
+            nav.speed = 6f;
         }
         else
         {
@@ -137,7 +142,32 @@ public class Enemy_Sound_AI : MonoBehaviour
     {
         float distance = Vector3.Distance(PlayerControl.playerPos, transform.position);
 
-        if (distance <= noiseTravelDistance)
+        if (distance <= noiseTravelDistance * walkNoiseMult)
+        {
+            if (PlayerControl.walkSilent == false && Input.GetButton("Horizontal") || PlayerControl.walkSilent == false && Input.GetButton("Vertical"))
+            {
+                noisePosition = PlayerControl.playerPos;
+                noiseVolume += 1f;
+
+                if (Physics.Raycast(noisePosition, -transform.up, 5f, SafeZone))
+                {
+                    aiHeardPlayer = false;
+                    
+                }
+                else if (Physics.Raycast(noisePosition, -transform.up, 5f, EnemyBlock))
+                {
+                    aiHeardPlayer = false;
+                    
+                }
+                else 
+                {
+                    aiHeardPlayer = true;
+                }
+
+                
+            }
+        }
+        else if (distance <= noiseTravelDistance)
         {
             if (PlayerControl.silent == false && Input.GetButton("Horizontal") || PlayerControl.silent == false && Input.GetButton("Vertical"))
             {

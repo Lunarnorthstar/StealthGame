@@ -30,7 +30,15 @@ public class Playerthrow : MonoBehaviour
             ammo--;
         }
 
-        ammoUI.text = "Throwables:" + ammo;
+        if (ammo >= 1)
+        {
+            ammoUI.text = "Throwable: Held";
+        }
+        else
+        {
+            ammoUI.text = "Throwables: None";
+        }
+        
     }
     
     private void OnTriggerEnter(Collider other) //When the player bumps into something...
