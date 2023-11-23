@@ -25769,6 +25769,10 @@ PrefabInstance:
       value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -6065976829721103110, guid: d26bb33eab2831f42a5303fb8c720527, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: b402aa32b3554634f9c8f0e8538d89fc, type: 3}
+    - target: {fileID: -6065976829721103110, guid: d26bb33eab2831f42a5303fb8c720527, type: 3}
       propertyPath: rolloffMode
       value: 2
       objectReference: {fileID: 0}
@@ -27573,6 +27577,10 @@ PrefabInstance:
       propertyPath: m_Volume
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4858813994009282899, guid: 7a343a44f757e3945acb11fc8cd72a4a, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 5a037f5b573250d48ac3accd8d2b1599, type: 3}
     - target: {fileID: 4991157850430559776, guid: 7a343a44f757e3945acb11fc8cd72a4a, type: 3}
       propertyPath: m_Layer
       value: 3
