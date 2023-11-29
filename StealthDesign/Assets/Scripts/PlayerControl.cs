@@ -53,7 +53,7 @@ public class PlayerControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        noiseMeter.transform.localScale = new Vector3(100, 100, 100);
+        noiseMeter.transform.localScale = new Vector3(50, 50, 50);
         moveDirection = cameraobject.forward * Input.GetAxis("Vertical");
         moveDirection += cameraobject.right * Input.GetAxis("Horizontal"); //These two lines get the horizontal and vertical components of movement based on player input
         moveDirection.Normalize(); //Normalize it so it's between 0 and 1
@@ -63,7 +63,7 @@ public class PlayerControl : MonoBehaviour
         if(crouched)
         {
             movementVelocity *= crouchSpeedMult; //If you're crouching, multiply your speed by the relevant multiplier.
-            noiseMeter.transform.localScale = new Vector3(50, 50, 50);
+            noiseMeter.transform.localScale = new Vector3(25, 25, 25);
         }
 
         if (Input.GetKey(KeyCode.LeftShift) && !crouched && stamina > 0 && (Input.GetAxis("Vertical") != 0 || Input.GetAxis("Horizontal") != 0))//If you're sprinting and not crouching and have stamina...
@@ -75,7 +75,7 @@ public class PlayerControl : MonoBehaviour
                 audioPlay = true; //Tell the script the audio is playing.
             }
             silent = false; //Set silent to false
-            noiseMeter.transform.localScale = new Vector3(200, 200, 200);
+            noiseMeter.transform.localScale = new Vector3(100, 100, 100);
             stamina -= Time.deltaTime; //Reduce your stamina.
         }
         else //If you aren't sprinting...
@@ -114,7 +114,7 @@ public class PlayerControl : MonoBehaviour
             
         }
 
-        staminaBar.transform.localScale = new Vector3( 1000 * (stamina / maxStamina), staminaBar.transform.localScale.y, staminaBar.transform.localScale.z); //Mess with the stamina bar gameobject to shrink it based on missing stamina
+        staminaBar.transform.localScale = new Vector3( 700 * (stamina / maxStamina), staminaBar.transform.localScale.y, staminaBar.transform.localScale.z); //Mess with the stamina bar gameobject to shrink it based on missing stamina
         
     }
 
